@@ -2680,7 +2680,7 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
     for (NSUInteger i = 0; i < _images.count; i++) {
         CGImageRef image = [self _newCGImageFromIndex:i decoded:NO];
         if (!image) return nil;
-        CFDataRef frameData = YYCGImageCreateEncodedWebPData(image, _lossless, _quality, 4, YYImagePresetDefault);
+        CFDataRef frameData = YYCGImageCreateEncodedWebPData(image, _lossless, _quality, 1, YYImagePresetText);
         CFRelease(image);
         if (!frameData) return nil;
         [webpDatas addObject:(__bridge id)frameData];
