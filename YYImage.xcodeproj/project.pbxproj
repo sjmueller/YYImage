@@ -148,7 +148,6 @@
 				D9A9951A1F0564180062698B /* Sources */,
 				D9A9951B1F0564180062698B /* Frameworks */,
 				D9A9951C1F0564180062698B /* Headers */,
-				2294518022E92E4400801089 /* Carthage */,
 				D9A9951D1F0564180062698B /* Resources */,
 			);
 			buildRules = (
@@ -200,29 +199,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2294518022E92E4400801089 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/libwebp.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/libwebp.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9A9951A1F0564180062698B /* Sources */ = {
